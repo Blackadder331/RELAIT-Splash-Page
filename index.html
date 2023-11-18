@@ -31,16 +31,35 @@
         href="https://www.youtube.com/watch?v=nNxudYHEJF8"
         class="button"
         target="_blank"
-        >CONVERGENCE ACCELERATOR VIDEO</a
+        >WATCH ACCELERATOR VIDEO</a
       >
     </main>
     <footer>
       <!-- <p>University of Arkansas - Education & Health Professions</p> -->
       <p>
-        <strong>Have questions? Contact our team!</strong><br /><br />
+        <strong>Have questions? Contact our team!</strong><br />
         <a href="mailto:connect@relate.ai">connect@relate.ai</a>
       </p>
       <!-- <p>Temple University - Center for Hybrid Intelligence</p> -->
     </footer>
+    <script>
+      function checkWindowSize() {
+        // Get the image element
+        var image = document.querySelector(".tagline");
+
+        // Check if the screen width is less than or equal to 540px
+        if (window.innerWidth <= 500) {
+          // If true, change the image source to the stacked version
+          image.src = "./img/tagline-stacked.png";
+        } else {
+          // If false, revert back to the original image source
+          image.src = "./img/tagline.png";
+        }
+      }
+
+      // Add event listeners for 'load' and 'resize' events
+      window.addEventListener("load", checkWindowSize);
+      window.addEventListener("resize", checkWindowSize);
+    </script>
   </body>
 </html>

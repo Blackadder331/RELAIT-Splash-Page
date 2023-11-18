@@ -4,13 +4,13 @@
 }
 .logo {
   max-width: 100%;
-  height: clamp(1rem, 85px + 2.5vw, 135px);
+  height: clamp(1rem, 50px + 4.5vw, 135px);
 }
 
 .tagline {
   max-width: 900px;
 
-  width: clamp(60vw, 650px, 95vw);
+  width: clamp(60vw, 650px, 70vw);
   margin: 0.5rem 0;
 }
 
@@ -28,19 +28,29 @@ body {
   height: 100svh;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* Add the specific weights for elements where needed */
 h1 {
+  max-width: 36ch;
   font-weight: 400; /* Roboto medium */
   font-size: clamp(1rem, 1rem + 2vw, 5rem);
   /* padding-inline: clamp(2rem, 15vw, 35rem); */
   padding-inline: clamp(5vw, 5% + 2vw, 15vw);
 
   text-align: center;
+  line-height: 1.25;
 }
 
 p {
   font-weight: 400; /* Roboto regular */
   font-size: 16px;
+  line-height: 1.5;
 }
 
 header {
@@ -76,7 +86,11 @@ a {
 }
 
 @media screen and (max-width: 540px) {
+  h1 {
+    line-height: 1.5;
+    /* margin-top: 1rem; */
+  }
   .button {
-    padding: 12.5px 25px;
+    margin-top: 20px;
   }
 }
