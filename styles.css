@@ -1,0 +1,67 @@
+/* styles.css */
+.logo {
+  height: 135px;
+}
+
+.tagline {
+  /* max-width: 100%;
+  width: 650px; */
+  width: clamp(60vw, 650px, 90vw);
+  margin: 0.5rem 0;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #00aabb;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh; /* backup */
+  height: 100svh;
+}
+
+/* Add the specific weights for elements where needed */
+h1 {
+  font-weight: 400; /* Roboto medium */
+}
+
+p {
+  font-weight: 400; /* Roboto regular */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 25svh;
+  background-color: #ffffff;
+}
+
+main h1 {
+  font-size: clamp(1rem, 25px, 3rem);
+
+  padding-inline: clamp(5vw, 25px, 45vw);
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  outline: 2px solid white;
+  margin: 50px 0;
+}
+
+footer {
+  background-color: #000000;
+  height: 12.5svh;
+}
