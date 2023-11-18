@@ -4,19 +4,19 @@
 }
 .logo {
   max-width: 100%;
-  height: clamp(1rem, 85px + 4vw, 135px);
+  height: clamp(1rem, 85px + 2.5vw, 135px);
 }
 
 .tagline {
   max-width: 900px;
 
-  width: clamp(60vw, 650px, 90vw);
+  width: clamp(60vw, 650px, 95vw);
   margin: 0.5rem 0;
 }
 
 body {
   font-family: "Roboto";
-  background-color: #00aabb;
+  background-image: linear-gradient(90deg, #00eb89, #00b9ff);
   color: white;
   margin: 0;
   padding: 0;
@@ -40,6 +40,7 @@ h1 {
 
 p {
   font-weight: 400; /* Roboto regular */
+  font-size: 16px;
 }
 
 header {
@@ -53,16 +54,29 @@ header {
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 25px 50px;
   background-color: black;
-  color: white;
+  color: #00eb89;
   text-decoration: none;
   font-weight: 400;
   outline: 2px solid white;
-  margin: 50px 0;
+  margin-top: 35px;
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #000000;
   height: 12.5svh;
+}
+a {
+  color: #00eb89;
+}
+
+@media screen and (max-width: 540px) {
+  .button {
+    padding: 12.5px 25px;
+  }
 }
