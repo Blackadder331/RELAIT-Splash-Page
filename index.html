@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>RELAIT - AI Communication</title>
+    <title>RELAIT - AI Communication Experiences</title>
+    <meta
+      name="description"
+      content="Artificial Intelligence. Genuine Communication."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,15 +22,13 @@
       <img class="logo" src="./img/RELAIT_Logo_RGB.svg" alt="" />
     </header>
     <main>
-      <img
-        class="tagline"
-        src="./img/tagline.png"
-        alt="ARTIFICIAL INTELLIGENCE. GENUINE COMMUNICATION."
-      />
       <h1>
+        ARTIFICIAL INTELLIGENCE. GENUINE COMMUNICATION.
+      </h1>
+      <h2>
         RELAIT is leveraging the power of AI to help create responsive,
         personalized, and meaningful communication experiences.
-      </h1>
+      </h2>
       <a
         href="https://www.youtube.com/watch?v=nNxudYHEJF8"
         class="button"
@@ -36,28 +38,21 @@
     </main>
     <footer>
       <!-- <p>University of Arkansas - Education & Health Professions</p> -->
+      <!-- <p>Temple University - Center for Hybrid Intelligence</p> -->
       <p>
         <strong>Have questions? Contact our team!</strong><br />
         <a href="mailto:connect@relate.ai">connect@relate.ai</a>
       </p>
-      <!-- <p>Temple University - Center for Hybrid Intelligence</p> -->
     </footer>
     <script>
       function checkWindowSize() {
-        // Get the image element
         var image = document.querySelector(".tagline");
-
-        // Check if the screen width is less than or equal to 540px
         if (window.innerWidth <= 500) {
-          // If true, change the image source to the stacked version
           image.src = "./img/tagline-stacked.png";
         } else {
-          // If false, revert back to the original image source
           image.src = "./img/tagline.png";
         }
       }
-
-      // Add event listeners for 'load' and 'resize' events
       window.addEventListener("load", checkWindowSize);
       window.addEventListener("resize", checkWindowSize);
     </script>

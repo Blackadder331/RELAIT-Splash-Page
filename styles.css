@@ -1,4 +1,8 @@
 /* styles.css */
+@font-face {
+  font-family: "n27";
+  src: url(./fonts/n27-regular-webfont.woff);
+}
 * {
   text-align: center;
 }
@@ -36,7 +40,13 @@ main {
 }
 
 /* Add the specific weights for elements where needed */
+
 h1 {
+  font-family: "n27";
+  color: #000000;
+}
+
+h2 {
   max-width: 36ch;
   font-weight: 400; /* Roboto medium */
   font-size: clamp(1rem, 1rem + 2vw, 5rem);
@@ -86,7 +96,7 @@ a {
 }
 
 @media screen and (max-width: 540px) {
-  h1 {
+  h2 {
     line-height: 1.5;
     /* margin-top: 1rem; */
   }
